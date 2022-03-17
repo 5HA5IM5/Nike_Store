@@ -1,6 +1,7 @@
 .featuredComponent {
   height: 100vh;
   background-color: #efefef;
+  margin-bottom: 50px;
 }
 .featuredComponent > h1 {
   text-align: center;
@@ -13,6 +14,7 @@
   justify-content: space-around;
   margin-top: 15px;
   padding: 15px;
+
 }
 
 @media (max-width: 768px) {

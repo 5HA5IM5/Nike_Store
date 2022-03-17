@@ -5,14 +5,17 @@ import CompareArrowsIcon from '@mui/icons-material/CompareArrows';
 import { IconButton } from "@material-ui/core";
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import ThreeDRotationIcon from '@mui/icons-material/ThreeDRotation';
-import { connect } from 'react-redux';
 import { addToCart } from '../../Redux/Shopping/shopping-actions'
+import { useDispatch } from 'react-redux';
 
-const ShopProductCard = ({ productData, addToCart }) => {
+const ShopProductCard = ({ productData }) => {
+
+    const dispatch = useDispatch()
+
     return (
         <div className='ShopProductCard'>
             <div className='top'>
-                <img className="ShopProductCard_card_logo" src={logo} alt="logo"/>
+                <img className="ShopProductCard_card_logo" src={logo} alt="logo" />
                 <div className="cardside-btn">
                     <IconButton >
                         <CompareArrowsIcon className="bc" fontSize='medium' />
@@ -31,7 +34,6 @@ const ShopProductCard = ({ productData, addToCart }) => {
             <div className='ShopProductCard_price'>
                 <p><span>$</span>{productData.price}</p>
             </div>
-            <hr />
 
             <div className='ShopProductCard_heading'>
                 <h3>{productData.title}</h3>
@@ -44,15 +46,10 @@ const ShopProductCard = ({ productData, addToCart }) => {
                 <div className="colorPallete purple"></div>
             </div>
             <div className='cartbutton'>
-                <button onClick={() => addToCart(productData.id)} className='button_Addtocart'>ADD TO CART</button>
+                <button onClick={() => dispatch(addToCart(productData.id))} className='button_Addtocart'>ADD TO CART</button>
             </div>
         </div>
     )
 }
 
-const mapDispatchToProps = dispatch => {
-    return {
-        addToCart: (id) => dispatch(addToCart(id)),
-    }
-}
-export default connect(null, mapDispatchToProps)(ShopProductCard);
+export default ShopProductCard;

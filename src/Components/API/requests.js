@@ -26,6 +26,7 @@ const brands_logo_req = [
 const gendars = ['male', 'female']
 
 const sports = ['Running', 'Basketball', 'Football', 'Cricket', 'Gymnastic', 'Tennis', 'Swimming', 'SkateBoarding', 'SnowBoarding', 'Rugby', 'Golf']
+const tech = ['Air Jordan', 'Air Max', 'Air Force', 'Nike Free Run', 'Cortez', 'downshifter', 'dunks', 'fusion', 'gripper']
 
 const header = {
     'x-rapidapi-host': 'the-sneaker-database.p.rapidapi.com',
@@ -37,5 +38,6 @@ export {
     header,
     brands_logo_req,
     gendars,
-    sports
+    sports,
+    tech
 }

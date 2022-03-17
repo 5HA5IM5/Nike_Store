@@ -1,26 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import '../ShopComponentsStyling/LeftNavigationShop.css'
-import { requests, header } from '../../requests.js';
-import axios from 'axios';
 import LeftNavigationLink from './LeftNavigationLink';
-import { gendars, sports } from '../../requests.js';
+import { gendars, sports,tech } from '../../../Components/API/requests';
 import jordan from '../../../Assets/jordan.png';
 import logo from '../../../Assets/logo.png';
 import rtfkt from '../../../Assets/rtfkt.png';
 
 const LeftNavigationShop = () => {
 
-    const [brands, setBrands] = useState([]);
+    // const [brands, setBrands] = useState([]);
 
-    useEffect(() => {
-        axios.get(requests.fetchBrands, {
-            headers: header
-        })
-            .then(function (response) {
-                setBrands(response.data.results);
-            })
+    // useEffect(() => {
+    //     axios.get(requests.fetchBrands, {
+    //         headers: header
+    //     })
+    //         .then(function (response) {
+    //             setBrands(response.data.results);
+    //         })
 
-    }, [])
+    // }, [])
 
     return (
         <div className='LeftNavigationShop'>
@@ -50,7 +48,7 @@ const LeftNavigationShop = () => {
 
             <LeftNavigationLink
                 name="Shoe Technology"
-                info={brands}
+                info={tech}
             />
 
             <LeftNavigationLink

@@ -1,0 +1,27 @@
+.Cart {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+}
+
+.Cart_heading {
+  font-size: 50px;
+  text-shadow: 1px 1px 7px;
+  font-weight: bolder;
+  margin-top: 25px;
+}
+
+hr {
+  margin-bottom: 50px;
+}
+
+.cart_list {
+  display: flex;
+}
+.cart_total {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

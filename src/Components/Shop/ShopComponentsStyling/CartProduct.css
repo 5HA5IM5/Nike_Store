@@ -1,0 +1,146 @@
+.CartProduct {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  height: 32vh;
+  width: 58vw;
+  cursor: pointer;
+  transition: transform 0.25s ease-out;
+  margin-bottom: 30px;
+}
+
+.CartProduct:hover {
+  transform: scale(1.03);
+}
+
+hr {
+  margin-bottom: 50px;
+}
+
+.Cart_img {
+  height: 220px;
+  object-fit: contain;
+  transform: rotate(25deg);
+}
+
+.Cart_imgBox {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: rgb(241, 164, 6);
+  background: linear-gradient(
+    9deg,
+    rgba(241, 164, 6, 1) 43%,
+    rgba(246, 189, 55, 1) 76%,
+    rgba(254, 226, 126, 1) 96%
+  );
+}
+
+.Cart_heading {
+  font-size: 50px;
+  text-shadow: 1px 1px 7px;
+  font-weight: bolder;
+}
+
+.Cart_detail {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 30px;
+}
+
+.Cart_title {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.Cart_name {
+  margin: 10px;
+  flex: 1;
+}
+
+.Cart_name > h1 {
+  font-size: 25px;
+}
+
+.Cart_name > h2 {
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.Cart_name > h3 {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.Cart_control {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.Cart_cross {
+  margin: 10px;
+}
+
+.Cart_detail > h2 {
+  margin-top: 10px;
+}
+
+
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+#decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+#increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+#input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 45px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

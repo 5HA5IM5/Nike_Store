@@ -10,7 +10,7 @@ import BestSelling from "./BestSelling";
 
 import banner from "../../../Assets/banner.png";
 import spacejam from "../../../Assets/spacejam.jpg";
-import { brands_logo_req } from "../../requests";
+import { brands_logo_req } from "../../../Components/API/requests";
 
 
 const MainPage = () => {
@@ -30,7 +30,7 @@ const MainPage = () => {
     <div className="mainPage">
       <HomeScreen />
       <FeaturedComponent />
-      <Banner image={spacejam} />
+      {/* <Banner image={spacejam} /> */}
       <BestSelling />
       <Banner image={banner} />
       <Brands logos={logos} />

@@ -57,7 +57,10 @@ const INITIAL_STATE = {
 
     cart: [],    //{id,title,descr,price,img,qty}
     currentItem: null,
+    cart_items: [],
 }
+
+
 
 const shopReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
@@ -72,17 +75,22 @@ const shopReducer = (state = INITIAL_STATE, action) => {
                             ? { ...item, qty: item.qty + 1 }
                             : item
                     )
-                    : [...state.cart, { ...item, qty: 1 }]
+                    : [...state.cart, { ...item, qty: 1 }],
             };
         case actionTypes.REMOVE_FROM_CART:
             return {
                 ...state,
                 cart: state.cart.filter((item) => item.id !== action.payload.id),
             };
-        case actionTypes.ADJUST_QTY:
+        case actionTypes.INCREASE_QTY:
             return {
                 ...state,
-                cart: state.cart.map((item) => item.id !== action.payload.id ? { ...item, qty: action.payload.qty } : item)
+                cart: state.cart.map((item) => item.id === action.payload.id ? { ...item, qty: action.payload.qty + 1 } : item)
+            };
+        case actionTypes.DECREASE_QTY:
+            return {
+                ...state,
+                cart: state.cart.map((item) => item.id === action.payload.id ? { ...item, qty: action.payload.qty - 1 } : item)
             };
         case actionTypes.LOAD_CURRENT_ITEM:
             return {

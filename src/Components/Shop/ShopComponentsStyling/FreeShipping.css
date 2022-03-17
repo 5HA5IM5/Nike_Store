@@ -4,8 +4,7 @@
   align-items: center;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  height: 8vh;
-  margin-top: 9vh;
+  margin-top: 13vh;
 }
 
 .freeShipping > p {
@@ -14,6 +13,6 @@
   margin-right: 20px;
 }
 .freeShipping > span {
-  font-size: 13px;
+  font-size: 11px;
   margin-left: 10x;
 }

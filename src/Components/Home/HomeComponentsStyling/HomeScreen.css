@@ -19,8 +19,8 @@
   font-family: "Montserrat", sans-serif;
 }
 .homeScreen_radial {
-  height: 60vh;
-  width: 60vh;
+  height: 58vh;
+  width: 58vh;
   margin-left: 10px;
   border-radius: 50%;
   background: rgb(241, 164, 6);
@@ -35,8 +35,8 @@
   justify-content: center;
 }
 .radial {
-  height: 70vh;
-  width: 70vh;
+  height: 68vh;
+  width: 68vh;
   margin-left: 30px;
   border-radius: 50%;
   border: 1px solid;
@@ -49,6 +49,8 @@
   border-left-color: var(--gray);
 }
 .Nike_img {
+  height: 78vh;
+  object-fit: contain;
   margin-bottom: 65px;
   margin-left: 60px;
   filter: drop-shadow(20px 25px 20px var(--black));
@@ -74,8 +76,8 @@
 }
 
 .button_Shopnow {
-  width: 40%;
-  height: 50px;
+  width: 38%;
+  height: 45px;
   margin-top: 10px;
   background-color: var(--black);
   color: var(--white);
@@ -106,19 +108,19 @@
 
 .content_Tagline {
   letter-spacing: 3px;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bolder;
 }
 .content_Heading {
   letter-spacing: 3px;
-  font-size: 100px;
+  font-size: 90px;
   font-weight: bolder;
   margin-bottom: 15px;
   text-shadow: 2.5px 0 var(--black);
 }
 .content_Matter {
   letter-spacing: 1px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bolder;
   margin-bottom: 15px;
 }

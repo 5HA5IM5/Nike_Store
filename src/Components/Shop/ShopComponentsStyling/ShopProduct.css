@@ -4,7 +4,8 @@
   text-transform: uppercase;
 }
 .sb_img {
-  width: 550px;
+  width: 500px;
+  margin-top: 10px;
   height: 200px;
   border-radius: 10px;
   cursor: pointer;

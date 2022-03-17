@@ -21,7 +21,7 @@ const Navbar = ({ activeNav }) => {
   const cart = useSelector((s) => s.shop.cart);
 
   useEffect(() => {
-    console.log(cart);
+
     let count = 0;
     cart.forEach((item) => {
       count += item.qty;
@@ -68,26 +68,27 @@ const Navbar = ({ activeNav }) => {
     </div>
 
     <div className="navbar_icons">
-      <IconButton>
-        <div className="bubble"><span>{cartCount}</span></div>
-        <ShoppingCartOutlinedIcon
-          className={`navbar_icon ${show && "navbar_icon_white"}`}
-          fontSize="medium"
-        />
-      </IconButton>
-
+      <Link to={'/cart'}>
+        <IconButton>
+          <div className="bubble"><span>{cartCount}</span></div>
+          <ShoppingCartOutlinedIcon
+            className={`navbar_icon ${show && "navbar_icon_white"}`}
+            fontSize="small"
+          />
+        </IconButton>
+      </Link>
       <Link to={'/login'}>
         <IconButton>
           <PermIdentityIcon
             className={`navbar_icon ${show && "navbar_icon_white"}`}
-            fontSize="medium"
+            fontSize="small"
           />
         </IconButton>
       </Link>
 
       <IconButton onClick={() => setBurgerStatus(true)}>
         <AppsOutlinedIcon
-          fontSize="medium"
+          fontSize="small"
           className={`navbar_icon ${show && "navbar_icon_white"}`}
         />
       </IconButton>

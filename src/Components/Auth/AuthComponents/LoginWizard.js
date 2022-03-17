@@ -31,8 +31,8 @@ const LoginWizard = () => {
       </Link>
 
       <div className='wizard'>
-        <button className={`login_switch ${login && 'active'}`} onClick={() => (setlogin(true) && setsignup(false))}>LOGIN</button>
-        <button className={`signup_switch ${signup && 'active'}`} onClick={() => (setsignup(true) && setlogin(false))} >SIGN UP</button>
+        <button className={`login_switch ${login && 'active'}`} onClick={() => (setlogin(true) & setsignup(false))}>LOGIN</button>
+        <button className={`signup_switch ${signup && 'active'}`} onClick={() => (setsignup(true) & setlogin(false))} >SIGN UP</button>
       </div>
 
       <span className={`${login ? ' show' : 'hide'}`}>

@@ -1,0 +1,70 @@
+.CartTotal {
+  width: 80%;
+  background-color: white;
+  height: 40vh;
+  margin-left: 60px;
+  border-radius: 10px;
+}
+
+.cart_logo {
+  height: 50px;
+  object-fit: contain;
+}
+
+.checkout_btn {
+  width: 90%;
+  border: none;
+  background: rgb(241, 164, 6);
+  background: linear-gradient(
+    9deg,
+    rgba(241, 164, 6, 1) 43%,
+    rgba(246, 189, 55, 1) 76%,
+    rgba(254, 226, 126, 1) 96%
+  );
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+}
+
+.checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.checkout_btn:hover {
+  background: white;
+  transition: all 5000ms ease-in;
+}
+
+.subtotal {
+  height: 12vh;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.paypallogo {
+  height: 40px;
+  object-fit: contain;
+}
+
+.paypal {
+  width: 90%;
+  background: none;
+  border: 3px solid whitesmoke;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.d-none{
+  display: none;
+}
